@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    tools:context=".NewJournal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/journal_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp">
+
+                <ProgressBar
+                    android:id="@+id/save_journal_progressbar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/back_to_journallist"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/back_arrow"
+                    android:src="@drawable/backblue" />
+
+                <ImageView
+                    android:id="@+id/image_chooser"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/chooseImage"
+                    android:src="@drawable/imagechooser" />
+
+                <ImageView
+                    android:id="@+id/save_journal"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@+id/image_chooser"
+                    android:contentDescription="@string/back_arrow"
+                    android:src="@drawable/ic_check" />
+
+                <ImageView
+                    android:id="@+id/journal_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/image_chooser"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/chooseImage"
+                    android:visibility="visible"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[16]" />
+
+                <TextView
+                    android:id="@+id/date_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/journal_image"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp"
+                    android:text="24"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/day_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/journal_image"
+                    android:layout_marginStart="5dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/date_show"
+                    android:text="Monday"
+                    android:textColor="@color/texthintColor" />
+
+                <TextView
+                    android:id="@+id/month_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/day_show"
+                    android:layout_marginStart="5dp"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/date_show"
+                    android:text="January"
+                    android:textColor="@color/texthintColor" />
+
+                <TextView
+                    android:id="@+id/year_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/day_show"
+                    android:textSize="12sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/month_show"
+                    android:text="2020"
+                    android:textColor="@color/texthintColor" />
+
+                <TextView
+                    android:id="@+id/time_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/journal_image"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:text="06:40 PM"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/journal_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date_show"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:hint="@string/journal_hint_title"
+                    android:importantForAutofill="no"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/journal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/journal_title"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:hint="@string/journal_hint_text"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

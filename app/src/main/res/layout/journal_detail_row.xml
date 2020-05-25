@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/row_cardView"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/d_journal_image"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:contentDescription="@string/chooseImage" />
+
+            <TextView
+                android:id="@+id/d_date_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/d_journal_image"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"
+                android:text="24"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/d_day_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/d_journal_image"
+                android:textColor="@color/texthintColor"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toEndOf="@+id/d_date_show"
+                android:text="Monday" />
+
+            <TextView
+                android:id="@+id/d_month_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/d_day_show"
+                android:textColor="@color/texthintColor"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/d_date_show"
+                android:text="January" />
+
+            <TextView
+                android:id="@+id/d_year_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/d_day_show"
+                android:textColor="@color/texthintColor"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/d_month_show"
+                android:text="2020" />
+
+            <TextView
+                android:id="@+id/d_time_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@id/d_journal_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:text="06:40 PM"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/d_journal_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/d_date_show"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="8dp"
+                android:textSize="24sp"
+                android:background="@null"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/d_journal_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/d_journal_title"
+                android:textColor="@color/textColor"
+                android:textAlignment="inherit"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:background="@null"
+                android:importantForAutofill="no" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

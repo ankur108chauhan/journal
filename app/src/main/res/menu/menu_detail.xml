@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit_journal"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_edit"
+        android:orderInCategory="10"
+        android:title="@string/add_journal" />
+
+    <item
+        android:id="@+id/delete_journal"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="always"
+        android:orderInCategory="20"
+        android:title="@string/signout" />
+</menu>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/row_cardView"
+        android:focusable="true"
+        app:cardCornerRadius="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/j_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"
+                android:text="24"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/j_month"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:textSize="12sp"
+                android:textColor="@color/texthintColor"
+                android:layout_toEndOf="@+id/j_date"
+                android:text="January" />
+
+            <TextView
+                android:id="@+id/j_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/texthintColor"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@+id/j_month"
+                android:text="2020" />
+
+            <TextView
+                android:id="@+id/j_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/texthintColor"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:text="Monday" />
+
+            <TextView
+                android:id="@+id/j_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/j_day"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentEnd="true"
+                android:text="06:40 PM"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/j_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:layout_below="@+id/j_time"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/journal_image"
+                android:visibility="gone"
+                tools:srcCompat="@tools:sample/avatars[0]" />
+
+            <TextView
+                android:id="@+id/j_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/j_date"
+                android:layout_toStartOf="@+id/j_image"
+                android:text="@string/title_hint"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/j_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_below="@id/j_title"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/j_image"
+                android:layout_marginTop="5dp"
+                android:maxLines="3"
+                android:text="@string/journal_text"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

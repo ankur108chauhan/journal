@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Journal</string>
+    <string name="login_text">Login</string>
+    <string name="create_text">Create Account</string>
+    <string name="signup">Sign Up</string>
+    <string name="username_hint">User Name</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="title_activity_journal_list">JournalList</string>
+    <string name="back_arrow">Back</string>
+    <string name="chooseImage">Image Chooser</string>
+    <string name="journal_hint_title">Title</string>
+    <string name="journal_hint_text">Write Here</string>
+    <string name="signout">Sign Out</string>
+    <string name="add_journal">Add journal</string>
+    <string name="save_fail">Saving Failed</string>
+    <string name="empty_values">Empty Fields are not allowed</string>
+    <string name="login_fail">This email address does not match any account</string>
+    <string name="journal_image">Journal Image</string>
+    <string name="title_hint">Title</string>
+    <string name="journal_text">Hello This is My Thoughtdg gfgdfd ggafhiu ifhsdfjfnkjsdfnsfjsnjdfjskfnsfnsnfdjfnsnfkjfnksdfjkdnfsnfnksfs
+    fffdsfskjdfnjksdnfkjsnkfndfndkfnksdnfksnfskfsnkfjnsfs
+    </string>
+    <string name="date_dummy">29</string>
+    <string name="dummy_time">12:50 PM</string>
+    <string name="day_dummy">Wednesday</string>
+    <string name="month_dummy">January</string>
+    <string name="year_dummy">2020</string>
+</resources>
